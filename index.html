@@ -8,6 +8,12 @@
   </head>
   <body>
     <main id="main">
+      <form id="recipe-form-template", onsubmit="createPost(); return false;">
+            Title: <input type="text" id="postTitle"><br>
+            Content: <input type="textarea" id="postContent"><br>
+            Created by: <input type="text" id="postAuthor"><br>
+            <input type="submit">
+          </form>
     </main>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="index.js"></script>
