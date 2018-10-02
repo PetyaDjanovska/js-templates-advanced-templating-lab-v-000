@@ -32,17 +32,18 @@
     <script id="recipe-template" type="text/x-handlebars-template">
       <div id="recipe">
         <h2>{{recipeName}}</h2>
-        <ul>
-          {{#each ingredients}}
-          <li>{{name}}</li>
-          {{/each}}
-        </ul>
+
       </div>
     </script>
 
     <script id="recipeDetailsPartial" type="text/x-handlebars-template">
       <div>
         <p>{{ recipeDescription }}</p>
+        <ul>
+          {{#each ingredients}}
+          <li>{{name}}</li>
+          {{/each}}
+        </ul>
       </div>
     </script>
   </body>
