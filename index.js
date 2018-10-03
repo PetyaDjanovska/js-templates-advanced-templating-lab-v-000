@@ -39,7 +39,7 @@ function init() {
 
   function displayForm(arg){
   const form = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
-  document.getElementsByTagName("main")[0].innerHTML += form
+  document.getElementsByTagName("main")[0].innerHTML += form({submitAction: `${arg}Recipe()`})
   }
 
 document.addEventListener("DOMContentLoaded", function(event) {
