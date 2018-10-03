@@ -6,7 +6,6 @@ function init() {
       return new Handlebars.SafeString(this.body);
   })
 
-  Handlebars.registerHelper('recipeDetailsPartial')
 
   function createRecipe() {
     let template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
