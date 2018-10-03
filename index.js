@@ -7,7 +7,6 @@ function init() {
       return new Handlebars.SafeString(this.body);
   })
 
-  displayform();
 }
 
 
