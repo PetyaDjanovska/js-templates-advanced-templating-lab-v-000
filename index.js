@@ -7,8 +7,6 @@ function init() {
       return new Handlebars.SafeString(this.body);
   })
 
-
-
   function createRecipe() {
     let template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
     let html = template({name: 'Gordon Ramsay'});
