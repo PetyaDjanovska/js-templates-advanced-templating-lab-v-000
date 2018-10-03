@@ -25,7 +25,7 @@ function init() {
 
     let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
     let recipeResult = recipeTemplate(recipe);
-    document.getElementsByTagName("main")[0].innerHTML = recipeResult
+    document.getElementsByTagName("main")[0].innerHTML += recipeResult
   }
 
   function displayEditForm(){
