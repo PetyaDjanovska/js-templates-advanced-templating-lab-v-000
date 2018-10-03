@@ -5,7 +5,7 @@ function init() {
 
   Handlebars.registerHelper('displayIngredient', function() {
       if (this != "") {
-      return '<li>' + this + '</li>';
+      return this;
     }
   })
 }
