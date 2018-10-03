@@ -23,7 +23,6 @@ function init() {
     }
 
     let recipeResult = recipeTemplate(recipe);
-
     document.getElementsByTagName("main")[0].innerHTML = recipeResult
   }
 
