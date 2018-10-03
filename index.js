@@ -30,7 +30,7 @@ function init() {
   }
 
   function displayEditForm(){
-    displayForm();
+    displayForm('update');
   }
 
   function updateRecipe(){
