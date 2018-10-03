@@ -8,6 +8,9 @@
   </head>
   <body>
     <main id="main">
+      <form id="recipe-form", onsubmit="createRecipe(); return false;">
+        {{> recipeFormPartial }}
+      </form>
     </main>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="index.js"></script>
@@ -29,9 +32,7 @@
 
 
     <script id="recipe-form-template" type="text/x-handlebars-template">
-      <form id="recipe-form", onsubmit="createRecipe(); return false;">
-        {{> recipeFormPartial }}
-      </form>
+      {{> recipeFormPartial }}
     </script>
 
     <!--PARTIALS -->
