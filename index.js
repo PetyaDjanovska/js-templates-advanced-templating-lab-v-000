@@ -29,10 +29,10 @@ function init() {
   }
 
   function displayEditForm(){
-
+    displayForm();
   }
 
-  function displayform(){
+  function displayForm(){
   const form = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
   document.getElementsByTagName("main")[0].innerHTML += form
   }
