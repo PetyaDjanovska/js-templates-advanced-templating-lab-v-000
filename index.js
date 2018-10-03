@@ -9,10 +9,10 @@ function init() {
 
   function createRecipe() {
     const recipe = {
-    name: document.getElementById("name").value,
-    description: document.getElementById("recipeDescription").value,
-    ingredients: []
-    }
+      name: document.getElementById("name").value,
+      description: document.getElementById("recipeDescription").value,
+      ingredients: []
+      }
     let ingredients = document.getElementsByName("ingredients")
     for (let i=0; i < ingredients.length; i++) {
       if (ingredients[i]) {
