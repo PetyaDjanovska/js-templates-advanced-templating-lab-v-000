@@ -9,7 +9,6 @@ function init() {
 
   function createRecipe() {
     let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
-    let recipeResult = recipeTemplate(recipe);
 
     const recipe = {
       name: document.getElementById("name").value,
@@ -22,6 +21,8 @@ function init() {
         recipe['ingredients'].push(ingredients[i].value)
       }
     }
+
+    let recipeResult = recipeTemplate(recipe);
 
     document.getElementsByTagName("main")[0].innerHTML = recipeResult
   }
