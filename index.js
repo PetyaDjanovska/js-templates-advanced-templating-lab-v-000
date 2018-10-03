@@ -6,7 +6,7 @@ function init() {
   Handlebars.registerHelper('displayIngredient', function() {
       return new Handlebars.SafeString(this.body);
   })
-  displayForm('create');
+  displayForm();
 }
 
 
