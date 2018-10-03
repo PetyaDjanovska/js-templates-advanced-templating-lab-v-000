@@ -8,12 +8,24 @@ function init() {
   })
 
   function createRecipe() {
-    let template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
-    let html = template({name: 'Gordon Ramsay'});
+    const recipe = {
+    name: document.getElementById("name").value,
+    description: document.getElementById("recipeDescription").value,
+    ingredients: []
+    }
+    let ingredients = document.getElementsByName("ingredients")
+    for (let i=0; i < ingredients.length; i++) {
+      if (ingredients[i]) {
+        recipe['ingredients'].push(ingredients[i].value)
+      }
+    }
+    let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
+    let recipeResult = recipeTemplate(recipe)
+    document.getElementsByTagName("main")[0].innerHTML = recipeResult
   }
 
   function displayEditForm(){
-    
+
   }
 }
 
