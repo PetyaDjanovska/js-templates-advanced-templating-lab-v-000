@@ -6,6 +6,8 @@ function init() {
   Handlebars.registerHelper('displayIngredient', function() {
       return new Handlebars.SafeString(this.body);
   })
+}
+
 
   function createRecipe() {
     let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
@@ -29,7 +31,6 @@ function init() {
   function displayEditForm(){
 
   }
-}
 
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
