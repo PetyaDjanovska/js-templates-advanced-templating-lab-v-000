@@ -11,6 +11,10 @@ function init() {
     let template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
     let html = template({name: 'Gordon Ramsay'});
   }
+
+  function displayEditForm(){
+    
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
