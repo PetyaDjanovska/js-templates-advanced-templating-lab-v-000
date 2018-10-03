@@ -12,7 +12,7 @@ function init() {
 
     const recipe = {
       name: document.getElementById("name").value,
-      description: document.getElementById("recipeDescription").value,
+      description: document.getElementById("description").value,
       ingredients: []
       }
     let ingredients = document.getElementsByName("ingredients")
