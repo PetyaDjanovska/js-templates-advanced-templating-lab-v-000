@@ -11,8 +11,6 @@ function init() {
 
 
   function createRecipe() {
-    let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
-
     const recipe = {
       name: document.getElementById("name").value,
       description: document.getElementById("description").value,
@@ -25,6 +23,7 @@ function init() {
       }
     }
 
+    let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
     let recipeResult = recipeTemplate(recipe);
     document.getElementsByTagName("main")[0].innerHTML = recipeResult
   }
