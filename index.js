@@ -32,7 +32,7 @@ function init() {
 
   }
 
-  function displayform(arg){
+  function displayform(){
   const form = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
   document.getElementsByTagName("main")[0].innerHTML += form({submitAction: `${arg}Recipe()`})
   }
